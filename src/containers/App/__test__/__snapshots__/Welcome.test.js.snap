@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Welcome text component renders default message without msg prop 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Welcome to React Native
+   
+</Text>
+`;
+
+exports[`Testing Welcome text component renders msg when msg prop is passed 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Hello from tests!
+   
+</Text>
+`;
+
+exports[`Testing Welcome text component renders msg when msg prop is passed 2`] = `
+<Text
+  accessible={true}
+  allowFontScaling={true}
+  ellipsizeMode="tail"
+>
+   
+  Hello World from tests!
+   
+</Text>
+`;
