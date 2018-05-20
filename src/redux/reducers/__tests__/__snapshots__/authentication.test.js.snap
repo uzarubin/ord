@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authentication Reducer tests: authenticateUser action returns state with isFetching: true 1`] = `
+Immutable.Record {
+  "isFetching": true,
+  "isAuthenticated": false,
+  "authenticationError": false,
+  "errorMessage": "",
+}
+`;
+
+exports[`Authentication Reducer tests: authenticationFailed action returns state with authenticataionError: true & errorMessage 1`] = `
+Immutable.Record {
+  "isFetching": false,
+  "isAuthenticated": false,
+  "authenticationError": true,
+  "errorMessage": "Failed to authenticate",
+}
+`;
+
+exports[`Authentication Reducer tests: authenticationSuccess action returns state with isFetching: false & isAuthenticated: true 1`] = `
+Immutable.Record {
+  "isFetching": false,
+  "isAuthenticated": true,
+  "authenticationError": false,
+  "errorMessage": "",
+}
+`;
+
+exports[`Authentication Reducer tests: returns the same state on an unhandled action 1`] = `
+Immutable.Record {
+  "isFetching": false,
+  "isAuthenticated": false,
+  "authenticationError": false,
+  "errorMessage": "",
+}
+`;

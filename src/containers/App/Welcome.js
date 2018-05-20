@@ -11,5 +11,5 @@ type Props = {
 }
 
 export default function (props: Props) {
-  return <Text> {props.msg ? props.msg : 'Welcome to React Native'} </Text>
+  return <Text>{props.msg ? props.msg : 'Welcome to React Native'}</Text>
 }

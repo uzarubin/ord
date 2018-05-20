@@ -6,9 +6,7 @@ exports[`Testing Welcome text component renders default message without msg prop
   allowFontScaling={true}
   ellipsizeMode="tail"
 >
-   
   Welcome to React Native
-   
 </Text>
 `;
 
@@ -18,9 +16,7 @@ exports[`Testing Welcome text component renders msg when msg prop is passed 1`] 
   allowFontScaling={true}
   ellipsizeMode="tail"
 >
-   
   Hello from tests!
-   
 </Text>
 `;
 
@@ -30,8 +26,6 @@ exports[`Testing Welcome text component renders msg when msg prop is passed 2`] 
   allowFontScaling={true}
   ellipsizeMode="tail"
 >
-   
   Hello World from tests!
-   
 </Text>
 `;
