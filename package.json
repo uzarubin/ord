@@ -6,10 +6,10 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint src",
     "test:unit": "jest",
-    "test": "yarn lint && yarn flow && jest",
+    "test": "yarn flow && jest",
     "flow": "flow",
     "flow-stop": "flow stop",
-    "precommit": "lint-staged && yarn test"
+    "precommit": "yarn test"
   },
   "lint-staged": {
     "*.js": [
@@ -17,6 +17,7 @@
     ]
   },
   "dependencies": {
+    "digits.js": "git+ssh://git@github.com/uzarubin/digits.js.git",
     "history": "^4.7.2",
     "immutable": "^4.0.0-rc.9",
     "react": "16.3.1",
@@ -35,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.3",
     "babel-jest": "22.4.3",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "^4.0.0",
     "enzyme": "^3.3.0",
