@@ -11,7 +11,7 @@ export default class Form extends Component {
   }
 
   submitForm = () => {
-    console.log('I am submitted, fuck yeah!', this.state)
+    // calling the submit function
     this.props.onSubmit()
   }
 
