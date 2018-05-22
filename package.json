@@ -6,10 +6,10 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "lint": "eslint src",
     "test:unit": "jest",
-    "test": "yarn flow && jest",
+    "test": "yarn lint && yarn flow && jest",
     "flow": "flow",
     "flow-stop": "flow stop",
-    "precommit": "yarn test"
+    "precommit": "lint-staged && yarn test"
   },
   "lint-staged": {
     "*.js": [
@@ -20,13 +20,13 @@
     "digits.js": "git+ssh://git@github.com/uzarubin/digits.js.git",
     "history": "^4.7.2",
     "immutable": "^4.0.0-rc.9",
+    "prop-types": "^15.6.1",
     "react": "16.3.1",
     "react-native": "0.55.2",
     "react-redux": "^5.0.7",
     "react-router-native": "^4.2.0",
     "react-router-redux": "5.0.0-alpha.9",
     "redux": "^3.7.2",
-    "redux-form": "^7.3.0",
     "redux-immutable": "^4.0.0",
     "redux-saga": "^0.16.0",
     "reselect": "^3.0.1",

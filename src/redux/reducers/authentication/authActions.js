@@ -20,7 +20,7 @@ type AUTH_ERROR = {
 
 type AUTHENTICATION_REQUEST_ACTION = {
   type: typeof AUTHENTICATION_REQUEST,
-  authData: Object,
+  payload: Object,
 }
 
 type AUTHENTICATION_SUCCESS_ACTION = {
@@ -40,7 +40,7 @@ export type Action = AUTHENTICATION_FAILED_ACTION | AUTHENTICATION_REQUEST_ACTIO
 export const authenticateUser = (payload: AuthenticationData): AUTHENTICATION_REQUEST_ACTION => (
   {
     type: AUTHENTICATION_REQUEST,
-    authData: Map(payload),
+    payload: Map(payload),
   }
 )
 

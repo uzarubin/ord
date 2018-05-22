@@ -2,14 +2,10 @@
 @flow
 */
 import type { Saga } from 'redux-saga'
-import { all, call } from 'redux-saga/effects'
+import { all } from 'redux-saga/effects'
 // import Api from '../../utils/ApiConfig'
+import { loginFlow } from './authentication/authentication_saga'
 
-/* eslint-disable */
-export function* helloSaga(): Saga<void>{
-  yield call(console.log, 'Hello Sagas!')
-}
-/* eslint-enable */
 export default function* rootSaga(): Saga<void> {
-  yield all([helloSaga()])
+  yield all([loginFlow()])
 }
